@@ -10,7 +10,7 @@ export default function Experience() {
                     <h3 className="text-2xl font-bold text-[#2196f3]">Desarrollador Web React Trainee</h3>
                     <div className="flex items-center text-gray-400">
                         <Calendar size={16} className="mr-1" />
-                        <span>Diciembre 2023 - Presente</span>
+                        <span>15 de Diciembre 2023 - 15 de Marzo de 2024</span>
                     </div>
                 </div>
 
@@ -23,10 +23,10 @@ export default function Experience() {
 
                 <div className="space-y-3 text-gray-300">
                     <p>
-                        Como desarrollador web React trainee, estoy adquiriendo experiencia práctica en el desarrollo de
-                        aplicaciones web modernas utilizando React y tecnologías relacionadas.
+                        Como desarrollador web React trainee, estoy obtuve experiencia práctica en el desarrollo de
+                        aplicaciones web modernas aplicando los conocimientos aprendidos en React y tecnologías relacionadas.
                     </p>
-                    <p>Mis responsabilidades incluyen:</p>
+                    <p>Mis responsabilidades incluyeron:</p>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>Desarrollo de componentes React reutilizables</li>
                         <li>Implementación de interfaces de usuario responsivas</li>

@@ -3,6 +3,16 @@ import { Code, ExternalLink } from "lucide-react"
 const projects = [
     {
         id: 1,
+        title: "PayStore",
+        image: "/paystore.jpeg?height=300&width=500",
+        description:
+            "Una web para la venta de un software de crédito, permitiendo a los usuarios crear cuentas y seleccionar módulos según sus necesidades.",
+        technologies: ["React", "JavaScript Vanilla", "Tailwind CSS"],
+        codeLink: "#",
+        demoLink: "#",
+    },
+    {
+        id: 2,
         title: "DevTools Hub",
         image: "/devtools.webp?height=300&width=500",
         description:
@@ -12,7 +22,7 @@ const projects = [
         demoLink: "#",
     },
     {
-        id: 2,
+        id: 3,
         title: "DevStagram",
         image: "/devstagram.jpeg?height=300&width=500",
         description:
@@ -21,16 +31,7 @@ const projects = [
         codeLink: "#",
         demoLink: "#",
     },
-    {
-        id: 3,
-        title: "Barber App",
-        image: "/paystore.jpeg?height=300&width=500",
-        description:
-            "Una aplicación web que se encarga gestionar citas y servicios de una barbería. Funciona sirviendo datos desde una API con PHP consumida por JavaScript para mejorar el rendimiento del servidor.",
-        technologies: ["PHP", "JavaScript", "MySQL"],
-        codeLink: "#",
-        demoLink: "#",
-    },
+
 ]
 
 export default function Projects() {

@@ -4,12 +4,12 @@ const technologies = [
     { name: "HTML", category: "frontend" },
     { name: "CSS", category: "frontend" },
     { name: "JavaScript", category: "frontend" },
+    { name: "React", category: "framework" },
     { name: "PHP", category: "backend" },
     { name: "MySQL", category: "database" },
     { name: "Git", category: "tool" },
     { name: "Vite", category: "tool" },
     { name: "Laravel", category: "framework" },
-    { name: "React", category: "framework" },
 ]
 
 export default function About() {

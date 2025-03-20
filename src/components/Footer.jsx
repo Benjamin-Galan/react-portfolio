@@ -3,7 +3,9 @@ export default function Footer() {
       <footer className="bg-gray-900 py-6">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
-            <h2 className="text-xl font-bold">benja.dev</h2>
+          <a href="/" className="text-xl font-bold">
+            benja.dev
+          </a>
           </div>
   
           <nav className="flex justify-center gap-6 mb-6">
@@ -21,7 +23,7 @@ export default function Footer() {
             </a>
           </nav>
   
-          <p className="text-gray-500 text-sm">Todos los derechos reservados. benja.dev 2024 ©</p>
+          
         </div>
       </footer>
     )

@@ -22,8 +22,8 @@ export default function Contact() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Email</h3>
-                        <a href="mailto:begalán@outlook.es" className="text-gray-400 hover:text-[#2196f3] transition-colors">
-                            begalán@outlook.es
+                        <a href="mailto:begalan@outlook.es" className="text-gray-400 hover:text-[#2196f3] transition-colors">
+                            begalan@outlook.es
                         </a>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ export default function Contact() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Instagram</h3>
-                        <a href="#" className="text-gray-400 hover:text-[#2196f3] transition-colors">
-                            @benja
+                        <a href="https://www.instagram.com/benjidev_1/" className="text-gray-400 hover:text-[#2196f3] transition-colors">
+                            @benjidev_1
                         </a>
                     </div>
                 </div>
@@ -60,8 +60,8 @@ export default function Contact() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">Github</h3>
-                        <a href="#" className="text-gray-400 hover:text-[#2196f3] transition-colors">
-                            github.com/benja
+                        <a href="https://github.com/Benjamin-Galan" className="text-gray-400 hover:text-[#2196f3] transition-colors">
+                            Benjamin-Galan
                         </a>
                     </div>
                 </div>
@@ -72,8 +72,8 @@ export default function Contact() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold">LinkedIn</h3>
-                        <a href="#" className="text-gray-400 hover:text-[#2196f3] transition-colors">
-                            linkedin.com/in/benja
+                        <a href="https://www.linkedin.com/in/benjam%C3%ADn-gal%C3%A1n-d%C3%ADaz-9346ba297/" className="text-gray-400 hover:text-[#2196f3] transition-colors">
+                            Benjamín Galán Díaz
                         </a>
                     </div>
                 </div>
