@@ -10,9 +10,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
     <nav className="sticky top-0 z-50 bg-gray-900 py-4 border-b border-gray-800">
       <div className="container max-w-[1000px] px-4">
         <div className="flex justify-between items-center">
-          <a href="/" className="text-xl font-bold">
+          <a href="/" className="text-white text-gray-950' text-xl font-bold">
             benja.dev
           </a>
+          {/* <a href="/" className={`${darkMode ? 'text-white' : 'text-gray-950'} text-xl font-bold`}>
+            benja.dev
+          </a> */}
+
 
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:hidden">

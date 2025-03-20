@@ -14,16 +14,16 @@ function App() {
   const [darkMode, setDarkMode] = useState(true)
 
   return (
-    <div className={`min-h-screen ${darkMode ? "bg-[#1a1f2c] text-white" : "bg-gray-100 text-gray-900"}`}>
+    <div className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="container mx-auto px-4 py-8 max-w-[1000px]">
-        <Header />
-        <Experience />
-        <Projects />
-        <About />
-        <Contact />
+        <Header darkMode={darkMode} />
+        <Experience darkMode={darkMode} />
+        <Projects darkMode={darkMode} />
+        <About darkMode={darkMode} />
+        <Contact darkMode={darkMode} />
       </main>
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   )
 }

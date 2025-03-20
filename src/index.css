@@ -55,8 +55,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1a1f2c;
-  color: white;
 }
 
 /* Elimina los estilos por defecto de Vite */
