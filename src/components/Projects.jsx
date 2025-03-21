@@ -18,7 +18,7 @@ const projects = [
     description:
       "DevTools Hub es un sitio web que contiene una colección de enlaces y herramientas que están en la web, muy útiles para desarrolladores, programadores o diseñadores.",
     technologies: ["JavaScript", "HTML", "CSS"],
-    codeLink: "#",
+    codeLink: "https://github.com/Benjamin-Galan/devtools_hub",
     demoLink: "#",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     description:
       "Un pequeño clon de Instagram hecho en Laravel. Puedes crear tu cuenta, editar tu perfil, seguir y ver tus seguidores. Además puedes compartir fotos, comentar y dar likes a publicaciones",
     technologies: ["Laravel", "PHP", "MySQL"],
-    codeLink: "#",
+    codeLink: "https://github.com/Benjamin-Galan/devstagram",
     demoLink: "#",
   },
 ]
