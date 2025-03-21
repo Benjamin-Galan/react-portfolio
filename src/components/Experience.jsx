@@ -1,6 +1,20 @@
 import { Calendar, MapPin, Briefcase } from "lucide-react"
+import { Code, ExternalLink } from "lucide-react"
 
 export default function Experience({ darkMode }) {
+
+  const projects = [
+    {
+      id: 1,
+      title: "PayStore",
+      image: "/matrixcell.jpeg?height=300&width=500",
+      description: " Colaboré en el desarrollo de una aplicación web llamada \"Matrixcell\", una plataforma de gestión de creditos de celulares para clientes y manejo de inventario para vendedores, utilizando React, JavaScript, Tailwind css, Git (Contribuyendo con un desarrollador backend) y aplicando conocimientos en diseño UI. Aprendí a trabajar en equipo, a comunicarme de manera efectiva y a resolver problemas de manera eficiente.",
+      technologies: ["React", "JavaScript Vanilla", "Tailwind CSS"],
+      codeLink: "https://github.com/pubnicaragua/app-multi-tiendas",
+      demoLink: "https://matrix-cell.com/invoices",
+    }
+  ]
+
   return (
     <section className="py-16" id="experiencia">
       <h2 className={`text-4xl font-bold mb-12 ${darkMode ? "text-white" : "text-gray-900"}`}>Experiencia Laboral</h2>
@@ -23,42 +37,36 @@ export default function Experience({ darkMode }) {
           <span>Managua, Nicaragua</span>
         </div>
 
-        <div className="space-y-3">
-          <p>
-            Como desarrollador web React trainee, obtuve experiencia práctica en el desarrollo de aplicaciones web
-            modernas aplicando los conocimientos aprendidos en React y tecnologías relacionadas.
-          </p>
-          <p>Mis responsabilidades incluyeron:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Desarrollo de componentes React reutilizables</li>
-            <li>Implementación de interfaces de usuario responsivas</li>
-            <li>Integración con APIs y servicios externos</li>
-            <li>Colaboración en proyectos de desarrollo web para clientes</li>
-            <li>Aprendizaje continuo de nuevas tecnologías y mejores prácticas</li>
-          </ul>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          <span
-            className={`inline-block ${darkMode ? "bg-blue-900/40 text-blue-300" : "bg-blue-100 text-blue-700"} text-xs px-2 py-1 rounded`}
-          >
-            React
-          </span>
-          <span
-            className={`inline-block ${darkMode ? "bg-yellow-900/40 text-yellow-300" : "bg-yellow-100 text-yellow-700"} text-xs px-2 py-1 rounded`}
-          >
-            JavaScript
-          </span>
-          <span
-            className={`inline-block ${darkMode ? "bg-purple-900/40 text-purple-300" : "bg-purple-100 text-purple-700"} text-xs px-2 py-1 rounded`}
-          >
-            CSS
-          </span>
-          <span
-            className={`inline-block ${darkMode ? "bg-green-900/40 text-green-300" : "bg-green-100 text-green-700"} text-xs px-2 py-1 rounded`}
-          >
-            Git
-          </span>
+        <div className="space-y-16">
+          {projects.map((project) => (
+            <div key={project.id} className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-auto object-cover border rounded-sm border-gray-500"
+                />
+              </div>
+              <div className="w-full md:w-1/2">
+                <p className={`${darkMode ? "text-gray-300" : "text-gray-700"} mb-6`}>{project.description}</p>
+                <div className="flex gap-3">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    className={`inline-flex  items-center gap-2 h-9 px-3 text-sm rounded-md ${darkMode
+                      ? "border-gray-600 bg-transparent hover:bg-gray-800 text-gray-300"
+                      : "border-gray-300 bg-white hover:bg-gray-50 text-gray-700 shadow-sm"
+                      } border transition-colors`}
+                  >
+                    <ExternalLink size={16} />
+                    Visitar
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

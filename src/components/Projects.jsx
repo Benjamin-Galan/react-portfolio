@@ -8,8 +8,8 @@ const projects = [
     description:
       "Una web para la venta de un software de crédito, permitiendo a los usuarios crear cuentas y seleccionar módulos según sus necesidades.",
     technologies: ["React", "JavaScript Vanilla", "Tailwind CSS"],
-    codeLink: "#",
-    demoLink: "#",
+    codeLink: "https://github.com/pubnicaragua/app-multi-tiendas",
+    demoLink: "https://app-multi-tiendas.vercel.app/home",
   },
   {
     id: 2,
@@ -55,9 +55,8 @@ export default function Projects({ darkMode }) {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className={`inline-block text-xs px-2 py-1 rounded ${
-                      darkMode ? "bg-gray-800 text-gray-300" : "bg-gray-200 text-gray-700"
-                    }`}
+                    className={`inline-block text-xs px-2 py-1 rounded ${darkMode ? "bg-gray-800 text-gray-300" : "bg-gray-200 text-gray-700"
+                      }`}
                   >
                     {tech}
                   </span>
@@ -67,22 +66,22 @@ export default function Projects({ darkMode }) {
               <div className="flex gap-3">
                 <a
                   href={project.codeLink}
-                  className={`inline-flex items-center gap-2 h-9 px-3 text-sm rounded-md ${
-                    darkMode
-                      ? "border-gray-600 bg-transparent hover:bg-gray-800 text-gray-300"
-                      : "border-gray-300 bg-white hover:bg-gray-50 text-gray-700 shadow-sm"
-                  } border transition-colors`}
+                  target="_blank"
+                  className={`inline-flex items-center gap-2 h-9 px-3 text-sm rounded-md ${darkMode
+                    ? "border-gray-600 bg-transparent hover:bg-gray-800 text-gray-300"
+                    : "border-gray-300 bg-white hover:bg-gray-50 text-gray-700 shadow-sm"
+                    } border transition-colors`}
                 >
                   <Code size={16} />
                   Código
                 </a>
                 <a
                   href={project.demoLink}
-                  className={`inline-flex items-center gap-2 h-9 px-3 text-sm rounded-md ${
-                    darkMode
-                      ? "border-gray-600 bg-transparent hover:bg-gray-800 text-gray-300"
-                      : "border-gray-300 bg-white hover:bg-gray-50 text-gray-700 shadow-sm"
-                  } border transition-colors`}
+                  target="_blank"
+                  className={`inline-flex items-center gap-2 h-9 px-3 text-sm rounded-md ${darkMode
+                    ? "border-gray-600 bg-transparent hover:bg-gray-800 text-gray-300"
+                    : "border-gray-300 bg-white hover:bg-gray-50 text-gray-700 shadow-sm"
+                    } border transition-colors`}
                 >
                   <ExternalLink size={16} />
                   Visitar
