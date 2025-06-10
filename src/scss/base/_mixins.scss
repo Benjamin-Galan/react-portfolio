@@ -1,0 +1,139 @@
+@use 'variables' as v;
+
+//tamaños de pantalla
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin contenedor {
+    width: 95%;
+    max-width: 85rem;
+    margin: 0 auto;
+}
+
+//estilos para los botones
+@mixin botonEnlaces {
+    border: 1px solid v.$dark2;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: v.$dark1 ;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: v.$dark2;
+        color: v.$blanco;
+        transition: 0.3s;
+
+        img,
+        p {
+            filter: invert(100%);
+        }
+    }
+}
+
+@mixin botonSubmit {
+    width: 15rem;
+    border: 1px solid v.$dark2;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    color: v.$blanco;
+    font-weight: 700;
+    background-color: rgb(51, 182, 106);
+
+    &:hover {
+        background-color: rgb(42, 148, 86), 10;
+        color: v.$blanco;
+        transition: 0.3s;
+    }
+}
+
+@mixin botonNavegacion {
+    color: v.$dark1;
+    font-size: 2.4rem;
+    font-size: 2rem;
+    transition: 0.3s;
+
+    &:hover,
+    &.active {
+        font-weight: 600;
+    }
+}
+
+@mixin botonOpciones {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: v.$blanco ;
+    margin: 5rem 0;
+}
+
+//estilos para el tamaño de los iconos
+@mixin iconSize {
+    width: 24px;
+    height: 24px;
+}
+
+@mixin tecnologias {
+    .html {
+        border: 2px solid rgb(255, 136, 0);
+    }
+
+    .css {
+        border: 2px solid rgb(17, 132, 209);
+    }
+
+    .javascript {
+        border: 2px solid orange;
+    }
+
+    .php {
+        border: 2px solid rgb(115, 97, 194);
+    }
+
+    .mysql {
+        border: 2px solid rgb(67, 104, 146);
+    }
+
+    .git {
+        border: 2px solid rgb(255, 51, 0);
+    }
+
+    .npm {
+        border: 2px solid rgb(224, 16, 1);
+    }
+
+    .composer {
+        border: 2px solid rgb(175, 100, 15);
+    }
+
+    .sass {
+        border: 2px solid #e91e63;
+    }
+}
