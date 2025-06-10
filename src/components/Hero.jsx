@@ -1,5 +1,5 @@
 import Navbar from "./Navbar"
-import Principal from "./principal"
+import Principal from "./Principal"
 
 export default function Hero() {
   return (
