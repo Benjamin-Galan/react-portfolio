@@ -5,7 +5,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import TechStack from "./components/TechStack"
-import "./app.scss"
+import "./App.scss"
 
 function App() {
   return (
