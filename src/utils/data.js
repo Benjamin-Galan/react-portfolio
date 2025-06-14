@@ -22,8 +22,8 @@ export const navlinks = [
 export const experience = [
     {
         id: 1,
-        title: "Desarrollador web trainee",
-        date: "Diciembre 2024 - Mayo 2025",
+        title: "Desarrollador React Trainee",
+        date: "Junio 2024 - Abril 2025",
         achieves: [
             { id: 1, description: 'Implementé funcionalidades en una aplicación de inventario llamada "matrixcell"' },
             { id: 2, description: 'Desarrollé "passk-events", una aplicación de administración de eventos en línea' },
@@ -37,7 +37,7 @@ export const experience = [
     {
         id: 2,
         title: "Proyecto de grado",
-        date: "Febrero 2025 - Mayo 2025",
+        date: "Mayo 2025",
         achieves: [
             { id: 1, description: "Desarrollé una aplicación para gestionar las citas y servicios de un salón de belleza" },
             { id: 2, description: "Implementé mis conocimientos en planificación y gestión de proyectos de software" },
@@ -52,42 +52,44 @@ export const projects = [
         name: "Uñas & Mechas",
         description:
             "Sistema completo para gestionar citas y servicios de un salón de belleza. Incluye autenticación, notificaciones en tiempo real y panel administrativo.",
-        image_path: "/placeholder.svg?height=200&width=350",
+        image_path: "/1.png",
         technologies: [
             { name: "Laravel", icon: LaravelIcon },
             { name: "React", icon: ReactIcon },
+            { name: "TypeScript", icon: TypescriptIcon },
             { name: "MySQL", icon: MysqlIcon },
         ],
-        code_path: "https://github.com/benjamingalan",
-        demo_path: "https://demo.com",
+        code_path: "https://github.com/Benjamin-Galan/u-as-mechas",
+        demo_path: "https://app-citas.mnz.dom.my.id/",
     },
     {
         id: 2,
-        name: "MatrixCell Inventory",
+        name: "Ghossip",
         description:
-            "Aplicación de inventario empresarial con funcionalidades avanzadas de gestión de productos, reportes y control de stock.",
-        image_path: "/placeholder.svg?height=200&width=350",
+            "Aplicación de chat básica en tiempo real. Incluye autenticacion y manejo de contactos",
+        image_path: "/2.png",
         technologies: [
-            { name: "TypeScript", icon: TypescriptIcon },
+            { name: "ReactJs", icon: ReactIcon },
             { name: "React", icon: ReactIcon },
             { name: "Supabase", icon: SupabaseIcon },
         ],
-        code_path: "https://github.com/benjamingalan",
-        demo_path: "https://demo.com",
+        code_path: "https://github.com/Benjamin-Galan/react-chat-app",
+        demo_path: "https://ghossip-app.vercel.app/",
     },
     {
         id: 3,
         name: "PassK Events",
         description:
             "Plataforma de administración de eventos en línea con sistema de registro, pagos y gestión de asistentes.",
-        image_path: "/placeholder.svg?height=200&width=350",
+        image_path: "/passk.png",
         technologies: [
             { name: "React", icon: ReactIcon },
+            { name: "TypeScript", icon: TypescriptIcon },
             { name: "Tailwind", icon: TailwindcssIcon },
             { name: "Supabase", icon: SupabaseIcon },
         ],
-        code_path: "https://github.com/benjamingalan",
-        demo_path: "https://demo.com",
+        code_path: "https://github.com/pubnicaragua/central-events",
+        demo_path: "https://passkevents.com/auth/register",
     },
 ]
 
