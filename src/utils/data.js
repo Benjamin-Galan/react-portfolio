@@ -74,7 +74,7 @@ export const projects = [
             { name: "Supabase", icon: SupabaseIcon },
         ],
         code_path: "https://github.com/Benjamin-Galan/react-chat-app",
-        demo_path: "https://ghossip-app.vercel.app/",
+        demo_path: "https://react-chat-app-gules.vercel.app/login",
     },
     {
         id: 3,
