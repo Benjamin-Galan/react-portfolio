@@ -1,8 +1,8 @@
 export default function Principal() {
   const handleDownloadCV = () => {
     const link = document.createElement('a')
-    link.href = '/ruta-a-tu-cv.pdf' // Asegúrate de que el archivo esté disponible públicamente
-    link.download = 'Benjamin_Galan_CV_ES.pdf'
+    link.href = '/cv.pdf' // Asegúrate de que el archivo esté disponible públicamente
+    link.download = 'cv.pdf'
     link.click()
   }
 
