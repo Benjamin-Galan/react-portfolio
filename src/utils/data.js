@@ -60,7 +60,7 @@ export const projects = [
             { name: "MySQL", icon: MysqlIcon },
         ],
         code_path: "https://github.com/Benjamin-Galan/u-as-mechas",
-        demo_path: "https://app-citas.mnz.dom.my.id/",
+        demo_path: "https://xn--uasymechassalon-yqb.es/",
     },
     {
         id: 2,
